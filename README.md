@@ -71,9 +71,3 @@ If song IDs differ between servers, matching relies on:
 2. fallback metadata key (`artist|album|disc|track|title|duration`)
 
 If both servers expose different paths/metadata for the same tracks, some songs may not match.
-
-## Security
-
-- `.env` is ignored by git.
-- Never commit credentials.
-- Use dedicated app users with least privilege.
