@@ -1,0 +1,22 @@
+[project]
+name = "navidrome-sync"
+version = "0.1.0"
+description = "One-way ratings and favorites sync between two Navidrome servers"
+readme = "README.md"
+authors = [
+    { name = "tantanok", email = "stangendeveloper@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+navidrome-sync = "navidrome_sync:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
